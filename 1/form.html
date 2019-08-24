@@ -1,0 +1,88 @@
+<html>
+    <head>Form</head>
+    <body>
+        <div id="Modalinput" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Tambah Biodata</h4>
+					</div>
+					<div class="modal-body">
+						<form action="siswa_add.php" name="modal_popup" enctype="multipart/form-data" method="post">
+							<div class="form-group">
+								<label>Nama Lengkap</label>
+									<div class="input-group">
+										<input name="namalengkap" type="text"  autocomplete="off" class="form-control" value="<?php echo $siswa["namalengkap"]; ?>" />
+									</div>
+							</div>
+							<div class="form-group">
+								<label>Tempat Lahir</label>
+									<div class="input-group">
+									<select name="tempat-lahir" class="form-control">
+											<option value="Pria">Jakarta</option>
+                							<option value="Wanita">Bandung</option>
+									</select>
+									</div>
+							</div>
+							<div class="form-group">
+								<label>Tanggal Lahir</label>
+									<div class="input-group">
+										<input name="tempat_lahir" type="text"  autocomplete="off" class="form-control" value="<?php echo $siswa["tempat_lahir"]; ?>" />
+									</div>
+							</div>
+							<div class="form-group">
+								<label>Nomor Hp</label>
+									<div class="input-group">
+										<input name="tgl_lahir" type="text"  autocomplete="off" class="form-control" value="<?php echo $siswa["tgl_lahir"]; ?>" />
+									</div>
+							</div>
+							<div class="form-group">
+								<label>Alamat</label>
+									<div class="input-group">
+										<input name="alamat" type="text"  autocomplete="off" class="form-control" value="<?php echo $siswa["alamat"]; ?>" />
+									</div>
+							</div>
+							<div class="form-group">
+								<label>Pendidikan Terakhir</label>
+									<div class="input-group">
+									<select name="pendidikan-terakhir" class="form-control">
+											<option value="Pria">SD</option>
+                							<option value="Wanita">SMP</option>
+									</select>
+									</div>
+							</div>
+							<div class="form-group">
+								<label>Agama </label>
+									<div class="input-group">
+									<input type="radio" name="agama" value=""> Islam<br>
+  									<input type="radio" name="agama" value=""> Kristen<br>
+ 									 <input type="radio" name="agama" value=""> katholik
+									</div>
+							</div>
+							<div class="form-group">
+								<label>Hobi</label>
+									<div class="input-group">
+									<input type="checkbox" name="hobi1" value="Bike"> Renang<br>
+									<input type="checkbox" name="hobi2" value="Car"> Mancing<br>
+									<input type="checkbox" name="hobi3" value="Boat"> Game<br> 
+									<input type="checkbox" name="hobi2" value="Car"> Gibah<br>
+									<input type="checkbox" name="hobi3" value="Boat"> Programming<br> 
+									</div>
+							</div>
+							
+							<div class="modal-footer">
+								<button class="btn btn-success" type="submit">
+									Tambah
+								</button>
+								<button type="reset" class="btn btn-danger"  data-dismiss="modal" aria-hidden="true">
+									Keluar
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

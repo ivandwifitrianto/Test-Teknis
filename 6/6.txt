@@ -1,0 +1,2 @@
+SELECT users.full_name, users.place_of_birth_id,  cities.name , users.date_of_birth, users.phone_number, users.last_educaton, users.religion FROM users, cities 
+where users.id=cities.id

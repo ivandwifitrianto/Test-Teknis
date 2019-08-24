@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+int bilangan,a,b,c,jumlah;
+cout<<"Input Parameter 1 : ";
+cin >>jumlah;
+while(c<jumlah)
+	{
+	bilangan++;
+	b=0;
+	for (a=1;a<=bilangan;a++)
+		{
+		if (bilangan%a==0)
+			{
+			b++;
+			}
+		}
+		if (b==2)
+			{
+			cout<<bilangan<<" ";
+			c++;
+			}
+	}
+}
